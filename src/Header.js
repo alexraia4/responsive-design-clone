@@ -9,6 +9,9 @@ export default function Header() {
             <p>Projects</p>
             <p>Contact</p>
         </nav>
+        <div className='Header_responsiveMenuButton'>
+          <p>Menu</p>
+        </div>
       </div>
     );
   }

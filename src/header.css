@@ -15,3 +15,24 @@
     justify-content: space-around;
     align-items: center;  
 }
+
+.Header_responsiveMenuButton {
+    display: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .Header {
+        color: rgb(0, 0, 0);
+        font-size: 0.8em;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-around;
+    }
+
+    .Header nav{
+        display: none;
+    }
+
+    .Header_responsiveMenuButton {
+        display: inline;
+    }
+  }

@@ -3,8 +3,14 @@
     min-height: 100vh;
 
     background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
     font-family: 'Nunito Sans', sans-serif;
     color: rgb(205, 209, 209);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .App_opacityLayer {
@@ -12,4 +18,35 @@
     width: 100%;
 
     background-color: rgba(19, 19, 18, 0.5);    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App_middleSection {
+    margin-bottom: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App h1 {
+    font-size: 4.5em;
+}
+
+.App_getStarted {
+    height: 7vh;
+    width: 15vw;
+
+    margin-top: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #64a19d;
 }
