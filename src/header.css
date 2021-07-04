@@ -1,8 +1,15 @@
 .Header {
 
-    height: 10vh;
+    height: 30vh;
     width: 100vw;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_default {
+    height: 10vh;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,12 +23,12 @@
     align-items: center;  
 }
 
-.Header_responsiveMenuButton {
+.Header_responsiveMenuButton, .Header_responsiveMenu{
     display: none;
 }
 
 @media only screen and (max-width: 990px) {
-    .Header {
+    .Header_default {
         color: rgb(0, 0, 0);
         font-size: 0.8em;
         background-color: rgb(255, 255, 255);
@@ -41,4 +48,10 @@
         border-radius: 5px;
         border-color: #64a19d;
     }
-  }
+
+    .Header_responsiveMenu {
+        display: none;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+    }
+}
